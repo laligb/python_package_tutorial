@@ -12,4 +12,7 @@ def test_mixed_case_palindrome():
     assert Phrase("RaceCar").ispalindrome()
 
 def test_palindrome_with_punctuation():
-    skip()
+    assert Phrase("Madam, I'm Adam.").ispalindrome()
+
+def test_letters():
+    assert Phrase("Madam, I'm Adam.").letters() == "MadamImAdam"
