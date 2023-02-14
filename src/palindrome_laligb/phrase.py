@@ -16,11 +16,8 @@ class Phrase:
 
     def letters(self):
         """Return the letters in the content."""
-        the_letters = []
-        for character in self.content:
-            if re.search(r"[a-zA-Z]", character):
-                the_letters.append(character)
-        return "".join(the_letters)
+        return "".join(c for c in self.content if re.search(r"[a-zA-Z]", c))
+
 
 
 def reverse(string):
