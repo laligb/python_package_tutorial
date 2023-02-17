@@ -25,3 +25,8 @@ def test_integer_non_palindrome():
 
 def test_integer_palindrome():
     assert Phrase(12321).ispalindrome()
+
+def test_palindrome_empty():
+    assert not Phrase("").ispalindrome()
+    assert not Phrase(" ").ispalindrome()
+    assert not Phrase("  ").ispalindrome()

@@ -14,7 +14,11 @@ class Phrase:
 
     def ispalindrome(self):
         """Return True for a palindrome, False otherwise."""
-        return self.processed_content() == reverse(self.processed_content())
+        print(self.processed_content())
+        if self.processed_content() == "":
+            return False
+        else:
+            return self.processed_content() == reverse(self.processed_content())
 
     def letters(self):
         """Return the letters in the content."""
